@@ -4,9 +4,9 @@ namespace GameConsole
 {
     class PlayerCharacter
     {
-        private readonly ISpecialDefence _specialDefence;
+        private readonly SpecialDefence _specialDefence;
 
-        public PlayerCharacter(ISpecialDefence specialDefence)
+        public PlayerCharacter(SpecialDefence specialDefence)
         {
             _specialDefence = specialDefence;
         }
@@ -15,27 +15,15 @@ namespace GameConsole
 
         public string Name { get; set; }
 
-        // public Nullable<int> DaysSinceLastLogin { get; set; }
         public int? DaysSinceLastLogin { get; set; }
 
-        // public Nullable<DateTime> DateOfBirth { get; set; }
         public DateTime? DateOfBirth { get; set; }
 
         public bool? IsNoob { get; set; }
 
         public void Hit(int damage)
         {
-            // int damageReduction = 0;
-
-            // if (_specialDefence != null)
-            // {
-            //     damageReduction = _specialDefence.CalculateDamageReduction(damage);
-            // }
-
-            // int totalDamageTaken = damage - damageReduction;
-
             int totalDamageTaken = damage - _specialDefence.CalculateDamageReduction(damage);
-
             Health -= totalDamageTaken;
             Console.WriteLine($"{Name}'s health has been reduced by {totalDamageTaken} to {Health}.");
         }
