@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0380971A-D99
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameConsole", "src\GameConsole\GameConsole.csproj", "{C48435DB-F9E4-4B36-9415-ED6A19DF4627}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS8NullBasics", "src\CS8NullBasics\CS8NullBasics.csproj", "{6A98CC29-8C2F-46B6-A9F4-E676B17A8EE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,8 +34,21 @@ Global
 		{C48435DB-F9E4-4B36-9415-ED6A19DF4627}.Release|x64.Build.0 = Release|Any CPU
 		{C48435DB-F9E4-4B36-9415-ED6A19DF4627}.Release|x86.ActiveCfg = Release|Any CPU
 		{C48435DB-F9E4-4B36-9415-ED6A19DF4627}.Release|x86.Build.0 = Release|Any CPU
+		{6A98CC29-8C2F-46B6-A9F4-E676B17A8EE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A98CC29-8C2F-46B6-A9F4-E676B17A8EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A98CC29-8C2F-46B6-A9F4-E676B17A8EE3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6A98CC29-8C2F-46B6-A9F4-E676B17A8EE3}.Debug|x64.Build.0 = Debug|Any CPU
+		{6A98CC29-8C2F-46B6-A9F4-E676B17A8EE3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6A98CC29-8C2F-46B6-A9F4-E676B17A8EE3}.Debug|x86.Build.0 = Debug|Any CPU
+		{6A98CC29-8C2F-46B6-A9F4-E676B17A8EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A98CC29-8C2F-46B6-A9F4-E676B17A8EE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A98CC29-8C2F-46B6-A9F4-E676B17A8EE3}.Release|x64.ActiveCfg = Release|Any CPU
+		{6A98CC29-8C2F-46B6-A9F4-E676B17A8EE3}.Release|x64.Build.0 = Release|Any CPU
+		{6A98CC29-8C2F-46B6-A9F4-E676B17A8EE3}.Release|x86.ActiveCfg = Release|Any CPU
+		{6A98CC29-8C2F-46B6-A9F4-E676B17A8EE3}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C48435DB-F9E4-4B36-9415-ED6A19DF4627} = {0380971A-D996-454A-BA52-EF7BBAABC0B5}
+		{6A98CC29-8C2F-46B6-A9F4-E676B17A8EE3} = {0380971A-D996-454A-BA52-EF7BBAABC0B5}
 	EndGlobalSection
 EndGlobal

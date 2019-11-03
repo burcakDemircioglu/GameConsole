@@ -6,20 +6,11 @@ namespace GameConsole
     {
         static void Main(string[] args)
         {
-            PlayerCharacter sarah = new PlayerCharacter(new DiamondSkinDefence())
-            {
-                Name = "Sarah"
-            };
-            
-            PlayerCharacter amrit = new PlayerCharacter(new IronBonesdefence())
-            {
-                Name = "Amrit"
-            };
+            PlayerCharacter sarah = new PlayerCharacter("Sarah", new DiamondSkinDefence());
 
-            PlayerCharacter gentry = new PlayerCharacter(SpecialDefence.Null)
-            {
-                Name = "Gentry"
-            };
+            PlayerCharacter amrit = new PlayerCharacter("Amrit", new IronBonesdefence());
+
+            PlayerCharacter gentry = new PlayerCharacter("Gentry", SpecialDefence.Null);
 
             sarah.Hit(10);
             amrit.Hit(10);

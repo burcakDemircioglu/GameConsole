@@ -6,8 +6,9 @@ namespace GameConsole
     {
         private readonly SpecialDefence _specialDefence;
 
-        public PlayerCharacter(SpecialDefence specialDefence)
+        public PlayerCharacter(String name, SpecialDefence specialDefence)
         {
+            Name = name;
             _specialDefence = specialDefence;
         }
 

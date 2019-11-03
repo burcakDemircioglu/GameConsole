@@ -4,8 +4,13 @@ namespace GameConsole
 {
     class PlayerDisplayer
     {
-        public static void Write(PlayerCharacter player)
+        public static void Write(PlayerCharacter? player)
         {
+            if (player is null) {
+                Console.WriteLine("No player specified.");
+                return;
+            }
+
             if (string.IsNullOrWhiteSpace(player.Name))
             {
                 Console.WriteLine("Player name is null or all whitespace");
