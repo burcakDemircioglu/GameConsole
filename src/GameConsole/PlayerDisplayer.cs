@@ -15,14 +15,17 @@ namespace GameConsole
                 Console.WriteLine(player.Name);
             }
 
-            if (player.DaysSinceLastLogin == null)
-            {
-                Console.WriteLine("No value for DaysSinceLastLogin");
-            }
-            else
-            {
-                Console.WriteLine(player.DaysSinceLastLogin);
-            }
+            // if (player.DaysSinceLastLogin.HasValue)
+            // {
+            //     Console.WriteLine(player.DaysSinceLastLogin.Value);
+            // }
+            // else
+            // {
+            //     Console.WriteLine("No value for DaysSinceLastLogin");
+            // }
+
+            int days = player.DaysSinceLastLogin.GetValueOrDefault(-1);
+            Console.WriteLine($"{days} since last login");
 
             if (player.DateOfBirth == null)
             {
