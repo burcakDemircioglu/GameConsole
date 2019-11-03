@@ -6,26 +6,25 @@ namespace GameConsole
     {
         static void Main(string[] args)
         {
-            PlayerCharacter player = new PlayerCharacter();
-            player.DaysSinceLastLogin = 42;
-
-            int days = player?.DaysSinceLastLogin ?? -1;
-            Console.WriteLine(days);
-
-            // PlayerDisplayer.Write(player);
-
-            PlayerCharacter[] players = new PlayerCharacter[3]
+            PlayerCharacter sarah = new PlayerCharacter(new DiamondSkinDefence())
             {
-               new PlayerCharacter{Name="Burcak"},
-               new PlayerCharacter(),
-               null
+                Name = "Sarah"
+            };
+            
+            PlayerCharacter amrit = new PlayerCharacter(new IronBonesdefence())
+            {
+                Name = "Amrit"
             };
 
-            string p1 = players?[0]?.Name;
-            string p2 = players?[1]?.Name;
-            string p3 = players?[2]?.Name;
+            PlayerCharacter gentry = new PlayerCharacter(new Nulldefence())
+            {
+                Name = "Gentry"
+            };
 
-            Console.WriteLine(p1 + " " + p2 + " " + p3);
+            sarah.Hit(10);
+            amrit.Hit(10);
+            gentry.Hit(10);
+
             Console.ReadLine();
         }
     }
