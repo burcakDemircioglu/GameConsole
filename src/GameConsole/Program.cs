@@ -8,6 +8,7 @@ namespace GameConsole
         {
             var player = new PlayerCharacter();
             player.Name = "Burcak";
+            player.DaysSinceLastLogin = 42;
 
             PlayerDisplayer.Write(player);
 
